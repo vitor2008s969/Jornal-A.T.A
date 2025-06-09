@@ -4,45 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jornal A.T.A</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
+        <!-- Cabeçalho -->
         <header>
-            <h1>Bem-vindo ao Jornal A.T.A</h1>
-            <p>Notícias e atualizações sobre nossa escola.</p>
+            <h1><i class="fas fa-newspaper"></i> Jornal A.T.A</h1>
+            <p>Notícias e atualizações da Escola Estadual Almirante Tamandaré</p>
         </header>
 
+        <!-- Menu de Navegação -->
+        <nav>
+            <a href="#noticias"><i class="fas fa-bell"></i> Notícias</a>
+            <a href="#eventos"><i class="fas fa-calendar-alt"></i> Eventos</a>
+            <a href="#ranking"><i class="fas fa-trophy"></i> Ranking</a>
+            <a href="contato.html"><i class="fas fa-envelope"></i> Contato</a>
+        </nav>
+
+        <!-- Conteúdo Principal -->
         <main>
-            <section class="news-section">
-                <h2>Notícias Recentes</h2>
+            <!-- Seção de Notícias -->
+            <section id="noticias" class="news-section">
+                <h2><i class="fas fa-newspaper"></i> Notícias Recentes</h2>
+                
                 <article class="news-item">
-                    <h3>Prova Paulista 2025 2° Bimestre</h3>
-                    <p>Confira todas as informações importantes e prepare-se para a prova.</p>
-                    <a href="#" class="read-more">Leia mais</a>
+                    <h3>Prova Paulista 2025 - 2° Bimestre</h3>
+                    <p>Confira o cronograma completo e matérias que serão cobradas.</p>
+                    <a href="prova-paulista.html" class="read-more">Leia mais <i class="fas fa-arrow-right"></i></a>
+                </article>
+
+                <article class="news-item">
+                    <h3>Festival de Ciências 2025</h3>
+                    <p>Inscrições abertas para o maior evento científico da escola.</p>
+                    <a href="ciencias.html" class="read-more">Leia mais <i class="fas fa-arrow-right"></i></a>
                 </article>
             </section>
 
-            <section class="events-section">
-                <h2>Eventos Futuros</h2>
-                <ul class="events-list">
-                    <li><strong>15/06:</strong> Reunião de Pais</li>
-                    <li><strong>09/06:</strong> Semana da Prova Paulista</li>
-                    <li><strong>27/06:</strong> Final interclasse</li>
-                </ul>
+            <!-- Seção de Ranking -->
+            <section id="ranking" class="ranking-section">
+                <h2><i class="fas fa-trophy"></i> Top 4 Melhores Alunos</h2>
+                <div class="ranking-grid">
+                    <div class="aluno">
+                        <img src="https://via.placeholder.com/60" alt="Ana Silva" class="foto-aluno">
+                        <div class="aluno-info">
+                            <span class="posicao">1º</span>
+                            <span class="nome">Ana Silva</span>
+                            <span class="nota">Média: 9.8</span>
+                            <a href="perfil-ana.html" class="perfil-link">Ver perfil</a>
+                        </div>
+                    </div>
+                    <!-- Repita para os outros 3 alunos -->
+                </div>
             </section>
 
-            <section class="highlights-section">
-                <h2>DESTAQUES DA SEMANA</h2>
-                <div class="checkbox-item">
-                    <span>☑</span> Melhores Alunos
-                </div>
+            <!-- Seção de Eventos -->
+            <section id="eventos" class="events-section">
+                <h2><i class="fas fa-calendar-week"></i> Próximos Eventos</h2>
+                <ul>
+                    <li><a href="reuniao-pais.html">15/06: Reunião de Pais</a></li>
+                    <li><a href="prova-paulista.html">09/06: Semana da Prova Paulista</a></li>
+                    <li><a href="interclasse.html">27/06: Final Interclasse</a></li>
+                </ul>
             </section>
         </main>
 
+        <!-- Rodapé -->
         <footer>
-            <p>© 2025 Jornal A.T.A & @vitorrodrigues_s</p>
+            <div class="social-links">
+                <a href="https://instagram.com/jornalata" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://facebook.com/jornalata" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="mailto:jornalata@escola.com"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p>© 2025 Jornal A.T.A | Desenvolvido por @vitorrodrigues_s</p>
         </footer>
     </div>
 </body>
-</html>
+                        </html>

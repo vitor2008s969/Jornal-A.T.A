@@ -1,102 +1,78 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jornal A.T.A</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jornal A.T.A 2025</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    <div class="container">
-        <!-- Cabeçalho -->
-        <header>
-            <h1><i class="fas fa-newspaper"></i> Jornal A.T.A</h1>
-            <p>Notícias e atualizações da Escola Estadual Adolpho Thomaz De Aquino</p>
-        </header>
+  <header>
+    <h1>Jornal A.T.A 2025</h1>
+    <button id="configBtn">⚙️</button>
+  </header>
 
+  <nav>
+    <input type="text" id="searchInput" placeholder="Buscar..." />
+  </nav>
 
-    <!-- Menu de Navegação Moderno -->
-    <nav class="main-nav">
-        <ul>
-            <li><a href="index.html" class="active"><i class="fas fa-home"></i> Home</a></li>
-            <li><a href="noticias/prova-paulista.html"><i class="fas fa-newspaper"></i> Notícias</a></li>
-            <li><a href="eventos.html"><i class="fas fa-calendar-alt"></i> Eventos</a></li>
-            <li><a href="memes.html"><i class="fas fa-laugh-squint"></i> Memes</a></li>
-            <li><a href="quiz.html"><i class="fas fa-question-circle"></i> Quiz</a></li>
-        </ul>
-    </nav>
-
-    <!-- Banner Destaque -->
-    <section class="featured-banner">
-        <div class="banner-content">
-            <h2>Prova Paulista 2025</h2>
-            <p>Confira todas as informações sobre o 2º bimestre</p>
-            <a href="noticias/prova-paulista.html" class="cta-button">Saiba Mais <i class="fas fa-arrow-right"></i></a>
-        </div>
+  <main>
+    <section id="frase-animada">
+      <h2>Frase do Dia</h2>
+      <p id="frase">"A educação é a arma mais poderosa que você pode usar para mudar o mundo." – Nelson Mandela</p>
     </section>
 
-    <!-- Conteúdo Principal -->
-    <main class="main-content">
-        <section class="news-section">
-            <article class="news-card">
-                <div class="news-image">
-                    <img src="images/prova.jpg" alt="Prova Paulista">
-                </div>
-                <div class="news-content">
-                    <h3>Prova Paulista 2025</h3>
-                    <p class="news-date"><i class="far fa-calendar"></i> 15/06/2025</p>
-                    <p>Confira o cronograma completo e as matérias que serão cobradas no 2º bimestre.</p>
-                    <a href="noticias/prova-paulista.html" class="read-more">Leia mais <i class="fas fa-angle-double-right"></i></a>
-                </div>
-            </article>
+    <section id="noticias">
+      <h2>Notícias Recentes</h2>
+      <ul>
+        <li>Início das aulas em 10 de fevereiro</li>
+        <li>Feira de Ciências programada para março</li>
+        <li>Novas atividades extracurriculares disponíveis</li>
+      </ul>
+    </section>
 
-            <article class="news-card">
-                <div class="news-image">
-                    <img src="images/ciencias.jpg" alt="Festival de Ciências">
-                </div>
-                <div class="news-content">
-                    <h3>Festival de Ciências 2025</h3>
-                    <p class="news-date"><i class="far fa-calendar"></i> 01/07/2025</p>
-                    <p>Inscrições abertas para o maior evento científico da escola.</p>
-                    <a href="noticias/festival-ciencias.html" class="read-more">Leia mais <i class="fas fa-angle-double-right"></i></a>
-                </div>
-            </article>
-        </section>
-    </main>
+    <section id="eventos">
+      <h2>Próximo Evento</h2>
+      <p>Contagem regressiva para a Feira de Ciências:</p>
+      <div id="contador">30 dias restantes</div>
+    </section>
 
-    <!-- Rodapé Profissional -->
-    <footer class="site-footer">
-        <div class="footer-container">
-            <div class="footer-section">
-                <h4>Sobre Nós</h4>
-                <p>O Jornal A.T.A traz as últimas notícias e eventos da Escola Estadual Adolpho Thomaz De Aquino.</p>
-            </div>
-            
-            <div class="footer-section">
-                <h4>Links Rápidos</h4>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="noticias/prova-paulista.html">Notícias</a></li>
-                    <li><a href="eventos.html">Eventos</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                </ul>
-            </div>
-            
-            <div class="footer-section">
-                <h4>Contato</h4>
-                <p><i class="fas fa-envelope"></i>
-                    jornalata@escola.com</p>
-                <p><i class="fas fa-phone"></i> (11) 1234-5678</p>
-            </div>
-        </div>
-        
-        <div class="footer-bottom">
-            <p>&copy; 2025 Jornal A.T.A | Desenvolvido por <a href="#">Vitor Rodrigues</a></p>
-        </div>
-    </footer>
+    <section id="ranking">
+      <h2>Ranking de Alunos</h2>
+      <ol>
+        <li>Maria - ⭐⭐⭐⭐⭐</li>
+        <li>João - ⭐⭐⭐⭐</li>
+        <li>Ana - ⭐⭐⭐</li>
+      </ol>
+    </section>
 
-    <script src="js/main.js"></script>
+    <section id="galeria">
+      <h2>Galeria de Fotos</h2>
+      <div class="galeria-projetos">
+        <img src="img/foto1.jpg" alt="Foto 1" />
+        <img src="img/foto2.jpg" alt="Foto 2" />
+        <img src="img/foto3.jpg" alt="Foto 3" />
+      </div>
+    </section>
+
+    <section id="quiz">
+      <h2>Quiz Interativo</h2>
+      <p>Qual é a capital do Brasil?</p>
+      <button>São Paulo</button>
+      <button>Rio de Janeiro</button>
+      <button>Brasília</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Jornal A.T.A. Todos os direitos reservados.</p>
+  </footer>
+
+  <button id="btnTopo">↑ Topo</button>
+
+  <script src="js/script.js"></script>
 </body>
-                        </html>
+</html>
+```
+

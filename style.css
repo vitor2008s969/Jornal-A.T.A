@@ -75,7 +75,7 @@ body::after {
 
 /* Títulos Coloridos */
 h2 {
-    color: #2563EB;
+    color: blue;
     position: relative;
     padding-bottom: 10px;
 }

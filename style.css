@@ -5,7 +5,7 @@
     --accent: #10b981;
     --text: #333333;
     --light: #f8fafc;
-    --dark: #1e293b;
+    --dark: #9400D3;
 }
 
 /* Reset e Estilos Globais */
@@ -65,7 +65,7 @@ nav {
     align-items: center;
     padding: 15px 0;
     margin-bottom: 30px;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #9400D3;
 }
 
 nav a {

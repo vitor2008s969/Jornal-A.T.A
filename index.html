@@ -3,114 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Facilitando Sua Vida - Nossa Missão</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <title>Jornal A.T.A | Home</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animacoes.css">
 </head>
 <body>
-    <!-- Barra de Navegação -->
-    <nav class="navbar">
-        <div class="container">
-            <a href="#" class="logo">FacilitaVida</a>
-            <div class="nav-links">
-                <a href="#features">Recursos</a>
-                <a href="sobre.html">Filosofia</a>
-                <a href="#publish">Publicar</a>
-                <a href="contato.html">Contato</a>
-            </div>
-            <button class="mobile-menu"><i class="fas fa-bars"></i></button>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <header class="hero">
-        <div class="container">
-            <h1>É nossa missão facilitar a vida das pessoas.</h1>
-            <p class="subtitle">Vamos começar com a sua.</p>
-            <div class="cta-buttons">
-                <a href="#publish" class="btn primary">Publicar Agora</a>
-                <a href="#features" class="btn secondary">Explorar Recursos</a>
-            </div>
-        </div>
+    <header>
+        <h1 id="logo">Jornal <span class="destaque">A.T.A</span></h1>
+        <button id="dark-mode-toggle">🌙</button>
     </header>
 
-    <!-- Filosofia -->
-    <section id="philosophy" class="philosophy-section">
-        <div class="container">
-            <h2>NOSSA FILOSOFIA ORIENTADORA</h2>
-            <div class="philosophy-grid">
-                <div class="philosophy-card">
-                    <div class="icon"><i class="fas fa-eye"></i></div>
-                    <h3>Pré-visualização</h3>
-                    <p>Visualize seu site antes de publicar com nosso editor intuitivo.</p>
-                </div>
-                <div class="philosophy-card">
-                    <div class="icon"><i class="fas fa-upload"></i></div>
-                    <h3>Publicar Site</h3>
-                    <p>Coloque seu site no ar com apenas um clique.</p>
-                </div>
-                <div class="philosophy-card">
-                    <div class="icon"><i class="fas fa-share-alt"></i></div>
-                    <h3>Compartilhar</h3>
-                    <p>Divulgue facilmente nas redes sociais.</p>
-                </div>
-                <div class="philosophy-card">
-                    <div class="icon"><i class="fas fa-paint-brush"></i></div>
-                    <h3>Editar Design</h3>
-                    <p>Personalização total do layout e cores.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <nav>
+        <ul>
+            <li><a href="index.html" class="ativo">Home</a></li>
+            <li><a href="noticias/prova-paulista.html">Notícias</a></li>
+            <li><a href="eventos.html">Eventos</a></li>
+            <li><a href="memes.html">Memes</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+        </ul>
+    </nav>
 
-    <!-- Publicação -->
-    <section id="publish" class="publish-section">
-        <div class="container">
-            <h2>Publicar na Internet</h2>
-            <div class="publish-features">
-                <div class="feature">
-                    <i class="fas fa-mobile-alt"></i>
-                    <span>Redimensionar para dispositivos menores</span>
-                </div>
-                <div class="feature">
-                    <i class="fas fa-bars"></i>
-                    <span>Barra de navegação personalizável</span>
-                </div>
-                <div class="feature">
-                    <i class="fas fa-globe"></i>
-                    <span>Domínio gratuito incluído</span>
-                </div>
-                <div class="feature">
-                    <i class="fas fa-cloud-upload-alt"></i>
-                    <span>Publicação em domínio Canva</span>
-                </div>
-                <div class="feature">
-                    <i class="fas fa-plus-circle"></i>
-                    <span>Registro de novo domínio</span>
-                </div>
-            </div>
-            <button class="btn combine-btn">Combinar Recursos <i class="fas fa-arrow-right"></i></button>
-        </div>
-    </section>
+    <main>
+        <section class="destaque">
+            <h2>Prova Paulista 2025</h2>
+            <p>Confira datas e matérias do 2º bimestre!</p>
+            <a href="noticias/prova-paulista.html" class="btn">Leia mais →</a>
+        </section>
+    </main>
 
-    <!-- Rodapé -->
     <footer>
-        <div class="container">
-            <p>© 2023 FacilitaVida. Todos os direitos reservados.</p>
-            <div class="social-links">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-            </div>
-        </div>
+        <p>© 2025 Jornal A.T.A | <a href="contato.html">Contato</a></p>
     </footer>
 
-    <script>
-        // Menu Mobile
-        document.querySelector('.mobile-menu').addEventListener('click', function() {
-            document.querySelector('.nav-links').classList.toggle('active');
-        });
-    </script>
+    <script src="js/dark-mode.js"></script>
+    <script src="js/contador.js"></script>
 </body>
-                    </html>
+</html>

@@ -2,46 +2,194 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato - Jornal A.T.A</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <style>
+        .contato-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin: 40px 0;
+        }
+        
+        .form-contato {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .form-group textarea {
+            min-height: 150px;
+        }
+        
+        .btn-enviar {
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+        
+        .btn-enviar:hover {
+            background: var(--secondary);
+        }
+        
+        .info-contato {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .info-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .info-item i {
+            font-size: 1.2em;
+            color: var(--primary);
+            margin-top: 3px;
+        }
+        
+        @media (max-width: 768px) {
+            .contato-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="container">
+        <!-- Cabeçalho -->
         <header>
-            <h1><i class="fas fa-envelope"></i> Fale Conosco</h1>
-            <a href="index.html" class="back-button"><i class="fas fa-arrow-left"></i> Voltar</a>
+            <div class="logo-container">
+                <a href="index.html">
+                    <img src="assets/logo.png" alt="Logo Jornal A.T.A" class="logo">
+                </a>
+                <div>
+                    <h1>Contato</h1>
+                    <p>Entre em contato com a equipe do Jornal A.T.A</p>
+                </div>
+            </div>
         </header>
 
+        <!-- Conteúdo Principal -->
         <main>
-            <section class="contact-form">
-                <form>
-                    <div class="form-group">
-                        <label for="nome">Nome:</label>
-                        <input type="text" id="nome" required>
+            <div class="voltar">
+                <a href="index.html"><i class="fas fa-arrow-left"></i> Voltar</a>
+            </div>
+
+            <div class="contato-container">
+                <!-- Formulário -->
+                <section class="form-contato">
+                    <h2><i class="fas fa-envelope"></i> Envie sua Mensagem</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="nome">Nome:</label>
+                            <input type="text" id="nome" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">E-mail:</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="assunto">Assunto:</label>
+                            <select id="assunto" required>
+                                <option value="">Selecione...</option>
+                                <option value="noticia">Sugestão de Notícia</option>
+                                <option value="correcao">Correção de Informação</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="mensagem">Mensagem:</label>
+                            <textarea id="mensagem" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn-enviar">
+                            <i class="fas fa-paper-plane"></i> Enviar Mensagem
+                        </button>
+                    </form>
+                </section>
+
+                <!-- Informações -->
+                <section class="info-contato">
+                    <h2><i class="fas fa-info-circle"></i> Outras Formas de Contato</h2>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Endereço</h3>
+                            <p>Escola Estadual Almirante Tamandaré<br>
+                            Rua das Flores, 123 - Centro, São Paulo/SP</p>
+                        </div>
                     </div>
                     
-                    <div class="form-group">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" required>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Telefone</h3>
+                            <p>(11) 1234-5678</p>
+                        </div>
                     </div>
-
-                    <div class="form-group">
-                        <label for="mensagem">Mensagem:</label>
-                        <textarea id="mensagem" rows="5" required></textarea>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>E-mail</h3>
+                            <p>jornalata@escola.com</p>
+                        </div>
                     </div>
-
-                    <button type="submit" class="submit-btn">
-                        <i class="fas fa-paper-plane"></i> Enviar
-                    </button>
-                </form>
-
-                <div class="contact-info">
-                    <h3><i class="fas fa-info-circle"></i> Outras Formas de Contato</h3>
-                    <p><i class="fas fa-phone"></i> (11) 1234-5678</p>
-                    <p><i class="fas fa-map-marker-alt"></i> Rua da Escola, 123 - São Paulo/SP</p>
-                </div>
-            </section>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Horário de Atendimento</h3>
+                            <p>Segunda a Sexta<br>
+                            8h às 12h | 13h às 17h</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
         </main>
+
+        <!-- Rodapé -->
+        <footer>
+            <!-- [Manter o mesmo rodapé do index.html] -->
+        </footer>
     </div>
 </body>
-</html>
+                                </html>

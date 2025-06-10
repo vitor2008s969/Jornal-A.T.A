@@ -3,117 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jornal A.T.A ~ site em desenvolvimento</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Facilitando Sua Vida - Nossa Missão</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <!-- Cabeçalho -->
-        <header>
-            <h1><i class="fas fa-newspaper"></i> Jornal A.T.A ~ site em desenvolvimento</h1>
-            <p>Notícias e atualizações da Escola Estadual Adolpho Thomaz De Aquino</p>
-        </header>
-
-        <!-- Menu de Navegação -->
-        <nav>
-            <a href="#noticias"><i class="fas fa-bell"></i> Notícias</a>
-            <a href="#eventos"><i class="fas fa-calendar-alt"></i> Eventos</a>
-            <a href="#ranking"><i class="fas fa-trophy"></i> Ranking</a>
-            <a href="contato.html"><i class="fas fa-envelope"></i> Contato</a>
-        </nav>
-
-        <!-- Conteúdo Principal -->
-        <main>
-            <!-- Seção de Notícias -->
-            <section id="noticias" class="news-section">
-                <h2><i class="fas fa-newspaper"></i> Notícias Recentes</h2>
-                
-                <article class="news-item">
-                    <h3>Prova Paulista 2025 - 2° Bimestre</h3>
-                    <p>Confira o cronograma completo e matérias que serão cobradas.</p>
-                    <a href="prova-paulista.html" class="read-more">Leia mais <i class="fas fa-arrow-right"></i></a>
-                </article>
-
-                <article class="news-item">
-                    <h3>Festival de Ciências 2025</h3>
-                    <p>Inscrições abertas para o maior evento científico da escola.</p>
-                    <a href="ciencias.html" class="read-more">Leia mais <i class="fas fa-arrow-right"></i></a>
-                </article>
-            </section>
-
-            <!-- Seção de Ranking -->
-            <section id="ranking" class="ranking-section">
-                <h2><i class="fas fa-trophy"></i> Top 4 Melhores Alunos</h2>
-                <div class="ranking-grid">
-                    <div class="aluno">
-                        <img src="https://via.placeholder.com/60" alt="○" class="👨‍🎓">
-                        <div class="aluno-info">
-
-                            
-                            <span class="posicao">1º</span>
-                            <span class="nome">Ana Silva</span>
-                            <span class="nota">Média: 9.8</span>
-                            <a href="perfil-ana.html" class="perfil-link">Ver perfil</a>
-                        </div>
-
-                        
-                        <div class="aluno-info">
-                            
-                            <span class="posicao">1º</span>
-                            <span class="nome">Ana Silva</span>
-                            <span class="nota">Média: 9.8</span>
-                            <a href="perfil-ana.html" class="perfil-link">Ver perfil</a>
-                        </div>
-                        
-                        <div class="aluno-info">
-                            
-                            <span class="posicao">1º</span>
-                            <span class="nome">Ana Silva</span>
-                            <span class="nota">Média: 9.8</span>
-                            <a href="perfil-ana.html" class="perfil-link">Ver perfil</a>
-                        </div>
-
-                        
-                        <div class="aluno-info">
-                            
-                            <span class="posicao">1º</span>
-                            <span class="nome">Ana Silva</span>
-                            <span class="nota">Média: 9.8</span>
-                            <a href="perfil-ana.html" class="perfil-link">Ver perfil</a>
-                        </div>
-                    </div>
-                    <!-- Repita para os outros 3 alunos -->
-                </div>
-            </section>
-
-            <!-- Seção de Eventos -->
-            <section id="eventos" class="events-section">
-                <h2><i class="fas fa-calendar-week"></i> Próximos Eventos</h2>
-                <ul>
-                    <li><a href="reuniao-pais.html">00/00 nenhum evento ainda</a></li>
-                    <li><a href="prova-paulista.html">09/06: Semana da Prova Paulista</a></li>
-                    <li><a href="interclasse.html">27/06: Final Interclasse</a></li>
-                </ul>
-            </section>
-        </main>
-
-        <!-- Rodapé -->
-        <footer>
-            <div class="social-links">
-                <a href="https://www.instagram.com/vitorrodrigues._s?igsh=amM4NmJhc213b2Nk" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://facebook.com/jornalata" target="_blank"><i class="fab fa-facebook"></i></a>
-                <a href="mailto:jornalata@escola.com"><i class="fas fa-envelope"></i></a>
+    <!-- Barra de Navegação -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">FacilitaVida</a>
+            <div class="nav-links">
+                <a href="#features">Recursos</a>
+                <a href="sobre.html">Filosofia</a>
+                <a href="#publish">Publicar</a>
+                <a href="contato.html">Contato</a>
             </div>
-            
-            <p>© 2025 Jornal A.T.A | Desenvolvimento por VITOR RODRIGUES :)
-        </footer>
-    </div>
+            <button class="mobile-menu"><i class="fas fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <h1>É nossa missão facilitar a vida das pessoas.</h1>
+            <p class="subtitle">Vamos começar com a sua.</p>
+            <div class="cta-buttons">
+                <a href="#publish" class="btn primary">Publicar Agora</a>
+                <a href="#features" class="btn secondary">Explorar Recursos</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Filosofia -->
+    <section id="philosophy" class="philosophy-section">
+        <div class="container">
+            <h2>NOSSA FILOSOFIA ORIENTADORA</h2>
+            <div class="philosophy-grid">
+                <div class="philosophy-card">
+                    <div class="icon"><i class="fas fa-eye"></i></div>
+                    <h3>Pré-visualização</h3>
+                    <p>Visualize seu site antes de publicar com nosso editor intuitivo.</p>
+                </div>
+                <div class="philosophy-card">
+                    <div class="icon"><i class="fas fa-upload"></i></div>
+                    <h3>Publicar Site</h3>
+                    <p>Coloque seu site no ar com apenas um clique.</p>
+                </div>
+                <div class="philosophy-card">
+                    <div class="icon"><i class="fas fa-share-alt"></i></div>
+                    <h3>Compartilhar</h3>
+                    <p>Divulgue facilmente nas redes sociais.</p>
+                </div>
+                <div class="philosophy-card">
+                    <div class="icon"><i class="fas fa-paint-brush"></i></div>
+                    <h3>Editar Design</h3>
+                    <p>Personalização total do layout e cores.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publicação -->
+    <section id="publish" class="publish-section">
+        <div class="container">
+            <h2>Publicar na Internet</h2>
+            <div class="publish-features">
+                <div class="feature">
+                    <i class="fas fa-mobile-alt"></i>
+                    <span>Redimensionar para dispositivos menores</span>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-bars"></i>
+                    <span>Barra de navegação personalizável</span>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-globe"></i>
+                    <span>Domínio gratuito incluído</span>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-cloud-upload-alt"></i>
+                    <span>Publicação em domínio Canva</span>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-plus-circle"></i>
+                    <span>Registro de novo domínio</span>
+                </div>
+            </div>
+            <button class="btn combine-btn">Combinar Recursos <i class="fas fa-arrow-right"></i></button>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <p>© 2023 FacilitaVida. Todos os direitos reservados.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Menu Mobile
+        document.querySelector('.mobile-menu').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
 </body>
-                        </html>
-
-
-
-
-Html
+                    </html>

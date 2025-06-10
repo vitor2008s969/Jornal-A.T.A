@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jornal A.T.A - Edição 2025</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Jornal A.T.A</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -12,129 +12,100 @@
     <div class="container">
         <!-- Cabeçalho -->
         <header>
-            <div class="logo-container">
-                <img src="assets/logo.png" alt="Logo Jornal A.T.A" class="logo">
-                <div>
-                    <h1>Jornal A.T.A</h1>
-                    <p>Informação e Conhecimento para Toda a Comunidade Escolar</p>
-                </div>
-            </div>
-            <div class="menu-mobile">
-                <i class="fas fa-bars"></i>
-            </div>
+            <h1><i class="fas fa-newspaper"></i> Jornal A.T.A</h1>
+            <p>Notícias e atualizações da Escola Estadual Adolpho Thomaz De Aquino</p>
         </header>
 
-        <!-- Navegação -->
-        <nav id="main-nav">
-            <a href="#noticias"><i class="fas fa-newspaper"></i> Notícias</a>
+        <!-- Menu de Navegação -->
+        <nav>
+            <a href="#noticias"><i class="fas fa-bell"></i> Notícias</a>
             <a href="#eventos"><i class="fas fa-calendar-alt"></i> Eventos</a>
             <a href="#ranking"><i class="fas fa-trophy"></i> Ranking</a>
-            <a href="#galeria"><i class="fas fa-images"></i> Galeria</a>
             <a href="contato.html"><i class="fas fa-envelope"></i> Contato</a>
-            <div class="busca">
-                <input type="text" placeholder="Buscar...">
-                <button><i class="fas fa-search"></i></button>
-            </div>
         </nav>
 
         <!-- Conteúdo Principal -->
         <main>
-            <!-- Seção de Destaque -->
-            <section class="destaque">
-                <div class="carrossel">
-                    <article class="destaque-item" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('assets/foto1.jpg');">
-                        <h2>Prova Paulista 2025</h2>
-                        <p>Tudo o que você precisa saber sobre as avaliações do bimestre</p>
-                        <a href="prova-paulista.html" class="botao">Leia Mais</a>
-                    </article>
-                    <!-- Adicione mais itens -->
+            <!-- Seção de Notícias -->
+            <section id="noticias" class="news-section">
+                <h2><i class="fas fa-newspaper"></i> Notícias Recentes</h2>
+                
+                <article class="news-item">
+                    <h3>Prova Paulista 2025 - 2° Bimestre</h3>
+                    <p>Confira o cronograma completo e matérias que serão cobradas.</p>
+                    <a href="prova-paulista.html" class="read-more">Leia mais <i class="fas fa-arrow-right"></i></a>
+                </article>
+
+                <article class="news-item">
+                    <h3>Festival de Ciências 2025</h3>
+                    <p>Inscrições abertas para o maior evento científico da escola.</p>
+                    <a href="ciencias.html" class="read-more">Leia mais <i class="fas fa-arrow-right"></i></a>
+                </article>
+            </section>
+
+            <!-- Seção de Ranking -->
+            <section id="ranking" class="ranking-section">
+                <h2><i class="fas fa-trophy"></i> Top 4 Melhores Alunos</h2>
+                <div class="ranking-grid">
+                    <div class="aluno">
+                        <img src="https://via.placeholder.com/60" alt="Ana Silva" class="foto-aluno">
+                        <div class="aluno-info">
+
+                            
+                            <span class="posicao">1º</span>
+                            <span class="nome">Ana Silva</span>
+                            <span class="nota">Média: 9.8</span>
+                            <a href="perfil-ana.html" class="perfil-link">Ver perfil</a>
+                        </div>
+
+                        
+                        <div class="aluno-info">
+                            
+                            <span class="posicao">1º</span>
+                            <span class="nome">Ana Silva</span>
+                            <span class="nota">Média: 9.8</span>
+                            <a href="perfil-ana.html" class="perfil-link">Ver perfil</a>
+                        </div>
+
+                        
+                        <div class="aluno-info">
+                            
+                            <span class="posicao">1º</span>
+                            <span class="nome">Ana Silva</span>
+                            <span class="nota">Média: 9.8</span>
+                            <a href="perfil-ana.html" class="perfil-link">Ver perfil</a>
+                        </div>
+                    </div>
+                    <!-- Repita para os outros 3 alunos -->
                 </div>
             </section>
 
-            <!-- Grade de Conteúdo -->
-            <div class="grade-conteudo">
-                <!-- Notícias -->
-                <section id="noticias" class="noticias-section">
-                    <h2><i class="fas fa-newspaper"></i> Últimas Notícias</h2>
-                    
-                    <article class="noticia-card">
-                        <img src="assets/foto2.jpg" alt="Feira de Ciências">
-                        <div class="noticia-content">
-                            <h3>Feira de Ciências 2025</h3>
-                            <p class="noticia-meta"><i class="far fa-calendar"></i> 15/06/2025</p>
-                            <p>Confira os projetos inovadores apresentados pelos alunos do 9º ano...</p>
-                            <a href="#" class="leia-mais">Leia mais <i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </article>
-
-                    <!-- Adicione mais notícias -->
-                </section>
-
-                <!-- Sidebar -->
-                <aside class="sidebar">
-                    <!-- Ranking -->
-                    <section id="ranking" class="ranking-section">
-                        <h2><i class="fas fa-trophy"></i> Top 5 Alunos</h2>
-                        <div class="ranking-list">
-                            <div class="aluno">
-                                <span class="posicao">1º</span>
-                                <img src="https://i.pravatar.cc/40?img=1" alt="Ana Silva">
-                                <div class="aluno-info">
-                                    <span class="nome">Ana Silva</span>
-                                    <span class="nota">9.8</span>
-                                </div>
-                            </div>
-                            <!-- Adicione mais alunos -->
-                        </div>
-                    </section>
-
-                    <!-- Eventos -->
-                    <section id="eventos" class="eventos-section">
-                        <h2><i class="fas fa-calendar-week"></i> Próximos Eventos</h2>
-                        <div class="evento">
-                            <div class="evento-data">
-                                <span class="dia">15</span>
-                                <span class="mes">Jun</span>
-                            </div>
-                            <div class="evento-info">
-                                <h3>Reunião de Pais</h3>
-                                <p>18h - Auditório</p>
-                            </div>
-                        </div>
-                        <!-- Adicione mais eventos -->
-                    </section>
-                </aside>
-            </div>
-
-            <!-- Galeria -->
-            <section id="galeria" class="galeria-section">
-                <h2><i class="fas fa-images"></i> Galeria de Fotos</h2>
-                <div class="galeria-grid">
-                    <img src="assets/foto1.jpg" alt="Evento escolar" loading="lazy">
-                    <img src="assets/foto2.jpg" alt="Alunos em aula" loading="lazy">
-                    <!-- Adicione mais fotos -->
-                </div>
+            <!-- Seção de Eventos -->
+            <section id="eventos" class="events-section">
+                <h2><i class="fas fa-calendar-week"></i> Próximos Eventos</h2>
+                <ul>
+                    <li><a href="reuniao-pais.html">00/00 nenhum evento ainda</a></li>
+                    <li><a href="prova-paulista.html">09/06: Semana da Prova Paulista</a></li>
+                    <li><a href="interclasse.html">27/06: Final Interclasse</a></li>
+                </ul>
             </section>
         </main>
 
-        <footer class="footer-vibrante">
-    <div class="footer-conteudo">
-        <div class="footer-logo">
-            <img src="assets/logo.png" alt="Logo Jornal A.T.A" width="120">
-            <p>Informação e conhecimento para toda a comunidade escolar</p>
-        </div>
-        
-        <div class="footer-redes">
-            <h3>Conecte-se</h3>
-            <div class="icones-redes">
-                <a href="#" class="icone-instagram"><i class="fab fa-instagram"></i></a>
-                <a href="#" class="icone-facebook"><i class="fab fa-facebook"></i></a>
-                <a href="#" class="icone-email"><i class="fas fa-envelope"></i></a>
+        <!-- Rodapé -->
+        <footer>
+            <div class="social-links">
+                <a href="https://www.instagram.com/vitorrodrigues._s?igsh=amM4NmJhc213b2Nk" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://facebook.com/jornalata" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="mailto:jornalata@escola.com"><i class="fas fa-envelope"></i></a>
             </div>
-        </div>
-    </div>
-    
-    <div class="footer-copyright">
-        <p>© 2025 Jornal A.T.A | Desenvolvido com <i class="fas fa-heart" style="color:#ff4757"></i> por Vitor Rodrigues</p>
-    </div>
+            
+            <p>© 2025 Jornal A.T.A | Desenvolvido por VITOR RODRIGUES 
         </footer>
+    </div>
+</body>
+                        </html>
+
+
+
+
+Html

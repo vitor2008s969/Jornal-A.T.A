@@ -1,78 +1,113 @@
-
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Jornal A.T.A 2025</title>
-  <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jornal A.T.A</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" href="imagens/logo.png">
 </head>
 <body>
-  <header>
-    <h1>Jornal A.T.A 2025</h1>
-    <button id="configBtn">⚙️</button>
-  </header>
+    <header>
+        <img src="imagens/logo.png" alt="Logo Jornal A.T.A" class="logo">
+        <h1>Bem-vindo ao Jornal A.T.A</h1>
+        <p>Notícias e atualizações sobre nossa escola.</p>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="noticias/prova-paulista.html">Notícias</a></li>
+                <li><a href="#eventos">Eventos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <nav>
-    <input type="text" id="searchInput" placeholder="Buscar..." />
-  </nav>
+    <main>
+        <section class="destaque">
+            <h2>Destaque da Semana</h2>
+            <div class="carrossel">
+                <img src="imagens/prova.jpg" alt="Prova Paulista" id="slide">
+                <button id="anterior">❮</button>
+                <button id="proximo">❯</button>
+            </div>
+        </section>
 
-  <main>
-    <section id="frase-animada">
-      <h2>Frase do Dia</h2>
-      <p id="frase">"A educação é a arma mais poderosa que você pode usar para mudar o mundo." – Nelson Mandela</p>
-    </section>
+        <section class="noticias">
+            <h2>Notícias Recentes</h2>
+            
+            <article>
+                <h3>Prova Paulista 2025 2° Bimestre</h3>
+                <img src="imagens/prova.jpg" alt="Estudantes fazendo prova" class="thumbnail">
+                <p>Confira todas as informações importantes e prepare-se para a prova.</p>
+                <div class="meta-info">
+                    <span class="data">Publicado em: 10/06/2025</span>
+                    <span class="autor">Por: Prof. Silva</span>
+                </div>
+                <a href="noticias/prova-paulista.html" class="leia-mais">Leia mais</a>
+            </article>
 
-    <section id="noticias">
-      <h2>Notícias Recentes</h2>
-      <ul>
-        <li>Início das aulas em 10 de fevereiro</li>
-        <li>Feira de Ciências programada para março</li>
-        <li>Novas atividades extracurriculares disponíveis</li>
-      </ul>
-    </section>
+            <article>
+                <h3>Feira de Ciências 2025</h3>
+                <img src="imagens/feira-ciencias.jpg" alt="Projetos de ciências" class="thumbnail">
+                <p>Inscrições abertas para a Feira de Ciências anual da escola.</p>
+                <div class="meta-info">
+                    <span class="data">Publicado em: 05/06/2025</span>
+                    <span class="autor">Por: Prof. Oliveira</span>
+                </div>
+                <a href="noticias/feira-ciencias.html" class="leia-mais">Leia mais</a>
+            </article>
+        </section>
 
-    <section id="eventos">
-      <h2>Próximo Evento</h2>
-      <p>Contagem regressiva para a Feira de Ciências:</p>
-      <div id="contador">30 dias restantes</div>
-    </section>
+        <section class="eventos" id="eventos">
+            <h2>Próximos Eventos</h2>
+            <div class="calendario">
+                <div class="evento">
+                    <div class="data-evento">15/06</div>
+                    <div class="info-evento">
+                        <h4>Reunião de Pais</h4>
+                        <p>18:30 - Auditório Principal</p>
+                        <button class="lembrete">Adicionar Lembrete</button>
+                    </div>
+                </div>
+                <div class="evento">
+                    <div class="data-evento">01/07</div>
+                    <div class="info-evento">
+                        <h4>Feira de Ciências</h4>
+                        <p>09:00 - Quadra Coberta</p>
+                        <button class="lembrete">Adicionar Lembrete</button>
+                    </div>
+                </div>
+                <div class="evento">
+                    <div class="data-evento">20/07</div>
+                    <div class="info-evento">
+                        <h4>Jogos Internos</h4>
+                        <p>08:00 - Quadras Esportivas</p>
+                        <button class="lembrete">Adicionar Lembrete</button>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <section id="ranking">
-      <h2>Ranking de Alunos</h2>
-      <ol>
-        <li>Maria - ⭐⭐⭐⭐⭐</li>
-        <li>João - ⭐⭐⭐⭐</li>
-        <li>Ana - ⭐⭐⭐</li>
-      </ol>
-    </section>
+        <section class="newsletter">
+            <h2>Receba as Notícias por Email</h2>
+            <form id="form-newsletter">
+                <input type="email" placeholder="Seu melhor email" required>
+                <button type="submit">Assinar</button>
+            </form>
+        </section>
+    </main>
 
-    <section id="galeria">
-      <h2>Galeria de Fotos</h2>
-      <div class="galeria-projetos">
-        <img src="img/foto1.jpg" alt="Foto 1" />
-        <img src="img/foto2.jpg" alt="Foto 2" />
-        <img src="img/foto3.jpg" alt="Foto 3" />
-      </div>
-    </section>
+    <footer>
+        <div class="redes-sociais">
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt="Facebook"></a>
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter"></a>
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"></a>
+        </div>
+        <p>© 2025 Jornal A.T.A @vitorrodrigues_s</p>
+        <p><a href="contato.html">Fale Conosco</a> | <a href="#">Política de Privacidade</a></p>
+    </footer>
 
-    <section id="quiz">
-      <h2>Quiz Interativo</h2>
-      <p>Qual é a capital do Brasil?</p>
-      <button>São Paulo</button>
-      <button>Rio de Janeiro</button>
-      <button>Brasília</button>
-    </section>
-  </main>
-
-  <footer>
-    <p>© 2025 Jornal A.T.A. Todos os direitos reservados.</p>
-  </footer>
-
-  <button id="btnTopo">↑ Topo</button>
-
-  <script src="js/script.js"></script>
+    <script src="scripts.js"></script>
 </body>
-</html>
-```
-
+              </html>

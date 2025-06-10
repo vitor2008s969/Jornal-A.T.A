@@ -2,19 +2,148 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Prova Paulista | Jornal A.T.A</title>
-    <link rel="stylesheet" href="../css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova Paulista 2025 | Jornal A.T.A</title>
+    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../css/colors.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header>...</header>
-    <nav>...</nav>
+    <header class="site-header">
+        <!-- Mesmo cabeçalho do index.html -->
+    </header>
 
-    <main>
+    <nav class="main-nav">
+        <!-- Mesma navegação do index.html -->
+    </nav>
+
+    <main class="main-content single-news">
         <article>
-            <h1>Prova Paulista 2025</h1>
-            <p>Datas: 15/06 a 20/06</p>
-            <a href="../index.html" class="btn">Voltar</a>
+            <div class="news-header">
+                <h1>Prova Paulista 2025 - 2º Bimestre</h1>
+                <div class="news-meta">
+                    <span class="news-date"><i class="far fa-calendar"></i> 15/06/2025</span>
+                    <span class="news-author"><i class="fas fa-user-edit"></i> Por Equipe A.T.A</span>
+                </div>
+            </div>
+            
+            <div class="news-image-full">
+                <img src="../images/prova-detail.jpg" alt="Estudantes fazendo prova">
+                <p class="image-caption">Alunos durante a Prova Paulista do ano passado</p>
+            </div>
+            
+            <div class="news-content">
+                <h2>Cronograma Completo</h2>
+                <table class="schedule-table">
+                    <thead>
+                        <tr>
+                            <th>Data</th>
+                            <th>Disciplina</th>
+                            <th>Horário</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>15/06/2025</td>
+                            <td>Matemática</td>
+                            <td>7:30 - 9:30</td>
+                        </tr>
+                        <tr>
+                            <td>17/06/2025</td>
+                            <td>Língua Portuguesa</td>
+                            <td>7:30 - 9:30</td>
+                        </tr>
+                        <tr>
+                            <td>20/06/2025</td>
+                            <td>Ciências</td>
+                            <td>7:30 - 9:30</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <h2>Conteúdo Programático</h2>
+                <div class="subject-card">
+                    <h3><i class="fas fa-square-root-alt"></i> Matemática</h3>
+                    <ul>
+                        <li>Álgebra: Equações do 2º grau</li>
+                        <li>Geometria: Áreas e volumes</li>
+                        <li>Estatística básica</li>
+                    </ul>
+                </div>
+                
+                <div class="subject-card">
+                    <h3><i class="fas fa-book"></i> Língua Portuguesa</h3>
+                    <ul>
+                        <li>Interpretação de texto</li>
+                        <li>Gramática: Concordância verbal</li>
+                        <li>Produção textual: Artigo de opinião</li>
+                    </ul>
+                </div>
+                
+                <div class="tips-section">
+                    <h3><i class="fas fa-lightbulb"></i> Dicas para a Prova</h3>
+                    <div class="tip-card">
+                        <i class="fas fa-clock"></i>
+                        <p>Chegue com pelo menos 30 minutos de antecedência</p>
+                    </div>
+                    <div class="tip-card">
+                        <i class="fas fa-pencil-alt"></i>
+                        <p>Leve caneta azul ou preta e lápis para rascunho</p>
+                    </div>
+                    <div class="tip-card">
+                        <i class="fas fa-water"></i>
+                        <p>Leve uma garrafa de água e um lanche leve</p>
+                    </div>
+                </div>
+            </div>
         </article>
+        
+        <aside class="news-sidebar">
+            <div class="sidebar-section">
+                <h4>Notícias Relacionadas</h4>
+                <div class="related-news">
+                    <a href="festival-ciencias.html" class="related-card">
+                        <img src="../images/ciencias-thumb.jpg" alt="Festival de Ciências">
+                        <h5>Festival de Ciências 2025</h5>
+                    </a>
+                    <a href="top-alunos.html" class="related-card">
+                        <img src="../images/top-alunos-thumb.jpg" alt="Top Alunos">
+                        <h5>Top 10 Melhores Alunos</h5>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="sidebar-section">
+                <h4>Próximos Eventos</h4>
+                <div class="event-item">
+                    <div class="event-date">
+                        <span class="day">01</span>
+                        <span class="month">Jul</span>
+                    </div>
+                    <div class="event-info">
+                        <h5>Festival de Ciências</h5>
+                        <p>Das 9h às 16h</p>
+                    </div>
+                </div>
+                <div class="event-item">
+                    <div class="event-date">
+                        <span class="day">20</span>
+                        <span class="month">Jul</span>
+                    </div>
+                    <div class="event-info">
+                        <h5>Jogos Internos</h5>
+                        <p>Manhã e Tarde</p>
+                    </div>
+                </div>
+            </div>
+        </aside>
     </main>
+
+    <footer class="site-footer">
+        <!-- Mesmo rodapé do index.html -->
+    </footer>
+
+    <script src="../js/main.js"></script>
 </body>
-</html>
+    </html>
